@@ -46,7 +46,7 @@ const moviesAPIController = {
                 res.json(respuesta);
             });
     },
-    'recomended': (req, res) => {
+    'recommended': (req, res) => {
         db.Movie.findAll({
             include: ['genre'],
             where: {
@@ -61,7 +61,7 @@ const moviesAPIController = {
                 meta: {
                     status : 200,
                     total: movies.length,
-                    url: 'api/movies/recomended/:rating'
+                    url: 'api/movies/recommended/:rating'
                 },
                 data: movies
             }

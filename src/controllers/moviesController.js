@@ -40,7 +40,7 @@ const moviesController = {
                 res.render('newestMovies', {movies});
             });
     },
-    'recomended': (req, res) => {
+    'recommended': (req, res) => {
         db.Movie.findAll({
             include: ['genre'],
             where: {

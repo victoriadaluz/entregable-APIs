@@ -8,7 +8,7 @@ router.get('/', moviesAPIController.list);
 //Detalle de una película
 router.get('/:id', moviesAPIController.detail);
 //Filtrar películas por rating. Puede colocar desde 1 hasta 10
-router.get('/recomended/:rating', moviesAPIController.recomended);
+router.get('/recommended/:rating', moviesAPIController.recommended);
 //Agregar una película
 router.post('/create', moviesAPIController.create);
 //Modificar una película
